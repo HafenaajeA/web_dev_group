@@ -1,401 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UI Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top custom-nav">
-        <div class="container">
-            <a class="navbar-brand text-white" href="#">
-                <span class="bg-teal p-1 rounded me-1">◢</span> UI Portfolio
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a href="#home" class="nav-link text-white">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link text-white-80">About</a></li>
-                    <li class="nav-item"><a href="#services" class="nav-link text-white-80">Services</a></li>
-                    <li class="nav-item"><a href="#blog" class="nav-link text-white-80">Blog</a></li>
-                    <li class="nav-item"><a href="#pages" class="nav-link text-white-80">Pages</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link text-white-80">Contact</a></li>
-                    <li class="nav-item"><button class="btn btn-teal rounded-pill px-4">Hire Me</button></li>
-                    <li class="nav-item">
-                        <button class="btn text-white-80"><i class="fas fa-search"></i></button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn text-white-80"><i class="fas fa-moon"></i></button>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">
+          <span class="bg-teal p-1 rounded me-1">◢</span> UI Portfolio
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a href="#home" class="nav-link text-white">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link text-white-80">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link text-white-80">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#blog" class="nav-link text-white-80">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#pages" class="nav-link text-white-80">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link text-white-80">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-teal rounded-pill px-4">Hire Me</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn text-white-80">
+                <i class="fas fa-search"></i>
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="btn text-white-80">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 position-relative">
-                    <h1 class="display-4 fw-bold mb-2">Hi, I'm John Watson</h1>
-                    <h2 class="display-3 fw-bold gradient-text mb-4">Web De</h2>
-                    <p class="text-gray mb-4">
-                        I love Graphic design and Photography and have been working on my portfolio since 2016.
-                        I Can give your business a new Creative start right away!
-                    </p>
-                    <div class="d-flex gap-3">
-                        <button class="btn btn-teal btn-lg rounded-pill">Hire Me</button>
-                        <button class="btn btn-outline-light btn-lg rounded-pill">My Portfolio</button>
-                    </div>
-                </div>
-                <div class="col-md-6 d-none d-md-block">
-                    <img src="path-to-image.png" alt="John Watson" class="img-fluid">
-                </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 position-relative">
+            <h1 class="display-4 fw-bold mb-2">Hi, I'm John Watson</h1>
+            <h2 class="display-3 text-outline mb-4">Web De</h2>
+            <p class="text-gray mb-4">
+              I love Graphic design and Photography and have been working on my
+              portfolio since 2016. I Can give your business a new Creative
+              start right away!
+            </p>
+            <div class="d-flex gap-3">
+              <button class="btn btn-teal btn-lg rounded-pill">Hire Me</button>
+              <button class="btn btn-outline-light btn-lg rounded-pill">
+                My Portfolio
+              </button>
             </div>
+          </div>
+          <div class="col-md-6 d-none d-md-block">
+            <img
+              src="./images/banner.png"
+              alt="John Watson"
+              class="img-fluid"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Biography Section -->
     <section id="about" class="py-5 bg-white">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="path-to-image.png" alt="John Watson" class="img-fluid rounded shadow-lg grayscale">
-                </div>
-                <div class="col-md-6">
-                    <span class="text-teal fw-medium">MY BIOGRAPHY</span>
-                    <h2 class="display-5 fw-bold text-dark mb-4">A Lead UI Designer & Web Developer Based In UK</h2>
-                    <p class="text-muted mb-4">
-                        I love Graphic design and Photography and have been working on my portfolio since 2016.
-                        I Can give your business a new Creative start right away! Contact me and we will discuss your projects!
-                    </p>
-                    
-                    <div class="row mb-4">
-                        <div class="col-6">
-                            <p><strong>Name:</strong> John Watson</p>
-                            <p><strong>Email:</strong> example@mail.com</p>
-                        </div>
-                        <div class="col-6">
-                            <p><strong>From:</strong> London, UK</p>
-                            <p><strong>Phone:</strong> +21 234 567 8901</p>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 biography-content">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="./images/about.jpg"
+                  alt="John Watson"
+                  class="img-fluid rounded shadow-lg grayscale"
+                />
+              </div>
+              <div class="col-md-6">
+                <span class="text-teal fw-medium">MY BIOGRAPHY</span>
+                <h2 class="display-5 fw-bold text-dark mb-4">
+                  A Lead UI Designer & Web Developer Based In UK
+                </h2>
+                <p class="text-muted mb-4">
+                  I love Graphic design and Photography and have been working on
+                  my portfolio since 2016. I Can give your business a new
+                  Creative start right away! Contact me and we will discuss your
+                  projects!
+                </p>
 
-                    <div class="mb-4">
-                        <p class="fw-bold">Follow me on</p>
-                        <div class="social-links">
-                            <a href="#" class="btn btn-linkedin"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="btn btn-twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="btn btn-facebook"><i class="fab fa-facebook-f"></i></a>
-                        </div>
+                <!-- Contact Info -->
+                <div class="contact-info row">
+                  <hr />
+                  <div class="col-6">
+                    <div class="info-group">
+                      <strong>Name:</strong><span>John Watson</span>
                     </div>
-
-                    <div class="d-flex gap-3">
-                        <button class="btn btn-teal btn-lg rounded-pill">Hire me</button>
-                        <button class="btn btn-outline-secondary btn-lg rounded-pill">Download CV</button>
+                    <div class="info-group">
+                      <strong>Email:</strong><span>example@mail.com</span>
                     </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="info-group">
+                      <strong>From:</strong><span>London, UK</span>
+                    </div>
+                    <div class="info-group">
+                      <strong>Phone:</strong><span>+21 234 567 8901</span>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="social-links">
+                      <p class="social-links-text">Follow me on</p>
+                      <a href="#" class="btn btn-linkedin"
+                        ><i class="fab fa-linkedin-in"></i
+                      ></a>
+                      <a href="#" class="btn btn-twitter"
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                      <a href="#" class="btn btn-facebook"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <button class="btn btn-teal btn-lg rounded-pill">
+                      Hire me
+                    </button>
+                    <button
+                      class="btn btn-outline-secondary btn-lg rounded-pill"
+                    >
+                      Download CV
+                    </button>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">What I Do For You</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <i class="fas fa-laptop text-teal mb-3"></i>
-                        <h3>Web Development</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudan.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <i class="fas fa-laptop text-teal mb-3"></i>
-                        <h3>Web Development</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudan.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <i class="fas fa-laptop text-teal mb-3"></i>
-                        <h3>Web Development</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudan.</p>
-                    </div>
-                </div>
-                <!-- Add other service cards similarly -->
+      <div class="container">
+        <h2 class="text-center mb-5">What I Do For You</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-card">
+              <i class="fas fa-laptop text-teal mb-3"></i>
+              <h3>Web Development</h3>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit accusantium
+                doloremque laudan.
+              </p>
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card">
+              <i class="fas fa-laptop text-teal mb-3"></i>
+              <h3>Web Development</h3>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit accusantium
+                doloremque laudan.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card">
+              <i class="fas fa-laptop text-teal mb-3"></i>
+              <h3>Web Development</h3>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit accusantium
+                doloremque laudan.
+              </p>
+            </div>
+          </div>
+          <!-- Add other service cards similarly -->
         </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="py-5 bg-white">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="notebook-image.jpg" alt="Skills Notebook" class="img-fluid rounded">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="./images/john-watson.JPG"
+              alt="Skills Notebook"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-md-6">
+            <span class="text-teal text-uppercase fw-medium">MY SKILLS</span>
+            <h2 class="display-6 fw-bold mb-4">My Featured Skills</h2>
+
+            <p class="text-muted mb-5">
+              I Specialize in Branding and Strategy, and am passionate about
+              creating Awesome Portfolio work. And I always ready to impress the
+              audience with my Creativity.
+            </p>
+
+            <div class="skill-bars">
+              <div class="mb-4">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="text-dark">UI/UX Design</span>
                 </div>
-                <div class="col-md-6">
-                    <span class="text-teal text-uppercase fw-medium">MY SKILLS</span>
-                    <h2 class="display-6 fw-bold mb-4">My Featured Skills</h2>
-                    
-                    <p class="text-muted mb-5">
-                        I Specialize in Branding and Strategy, and am passionate about creating Awesome Portfolio work. And I always ready to impress the audience with my Creativity.
-                    </p>
-
-                    <div class="skill-bars">
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span class="text-dark">UI/UX Design</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-teal" style="width: 95%"></div>
-                            </div>
-                        </div>
-
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span class="text-dark">Ideas & Technology</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-teal" style="width: 98%"></div>
-                            </div>
-                        </div>
-
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span class="text-dark">Branding Design</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-teal" style="width: 75%"></div>
-                            </div>
-                        </div>
-
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span class="text-dark">Responsive Web Design</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-teal" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="progress">
+                  <div class="progress-bar bg-teal" style="width: 95%"></div>
                 </div>
+              </div>
+
+              <div class="mb-4">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="text-dark">Ideas & Technology</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-teal" style="width: 98%"></div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="text-dark">Branding Design</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-teal" style="width: 75%"></div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="text-dark">Responsive Web Design</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-teal" style="width: 85%"></div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Features Grid Section -->
     <section class="features-grid py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="feature-item d-flex align-items-start">
-                        <div class="feature-icon me-4">
-                            <i class="fas fa-globe text-teal"></i>
-                        </div>
-                        <div>
-                            <h3 class="h5 mb-2">Web Development</h3>
-                            <p class="text-muted mb-0">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="feature-item d-flex align-items-start">
-                        <div class="feature-icon me-4">
-                            <i class="fas fa-palette text-teal"></i>
-                        </div>
-                        <div>
-                            <h3 class="h5 mb-2">Design Trends</h3>
-                            <p class="text-muted mb-0">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="feature-item d-flex align-items-start">
-                        <div class="feature-icon me-4">
-                            <i class="fas fa-chart-line text-teal"></i>
-                        </div>
-                        <div>
-                            <h3 class="h5 mb-2">Research & Analysis</h3>
-                            <p class="text-muted mb-0">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="feature-item d-flex align-items-start">
-                        <div class="feature-icon me-4">
-                            <i class="fas fa-headset text-teal"></i>
-                        </div>
-                        <div>
-                            <h3 class="h5 mb-2">Customer Support</h3>
-                            <p class="text-muted mb-0">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="feature-item d-flex align-items-start">
-                        <div class="feature-icon me-4">
-                            <i class="fas fa-mobile-alt text-teal"></i>
-                        </div>
-                        <div>
-                            <h3 class="h5 mb-2">Responsive Design</h3>
-                            <p class="text-muted mb-0">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="feature-item d-flex align-items-start">
-                        <div class="feature-icon me-4">
-                            <i class="fas fa-layer-group text-teal"></i>
-                        </div>
-                        <div>
-                            <h3 class="h5 mb-2">PSD Design</h3>
-                            <p class="text-muted mb-0">Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="feature-item d-flex align-items-start">
+              <div class="feature-icon me-4">
+                <i class="fas fa-globe text-teal"></i>
+              </div>
+              <div>
+                <h3 class="h5 mb-2">Web Development</h3>
+                <p class="text-muted mb-0">
+                  Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-item d-flex align-items-start">
+              <div class="feature-icon me-4">
+                <i class="fas fa-palette text-teal"></i>
+              </div>
+              <div>
+                <h3 class="h5 mb-2">Design Trends</h3>
+                <p class="text-muted mb-0">
+                  Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-item d-flex align-items-start">
+              <div class="feature-icon me-4">
+                <i class="fas fa-chart-line text-teal"></i>
+              </div>
+              <div>
+                <h3 class="h5 mb-2">Research & Analysis</h3>
+                <p class="text-muted mb-0">
+                  Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-item d-flex align-items-start">
+              <div class="feature-icon me-4">
+                <i class="fas fa-headset text-teal"></i>
+              </div>
+              <div>
+                <h3 class="h5 mb-2">Customer Support</h3>
+                <p class="text-muted mb-0">
+                  Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-item d-flex align-items-start">
+              <div class="feature-icon me-4">
+                <i class="fas fa-mobile-alt text-teal"></i>
+              </div>
+              <div>
+                <h3 class="h5 mb-2">Responsive Design</h3>
+                <p class="text-muted mb-0">
+                  Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-item d-flex align-items-start">
+              <div class="feature-icon me-4">
+                <i class="fas fa-layer-group text-teal"></i>
+              </div>
+              <div>
+                <h3 class="h5 mb-2">PSD Design</h3>
+                <p class="text-muted mb-0">
+                  Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Statistics Section -->
     <section class="stats-section py-5 bg-light">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
-                    <div class="stats-item">
-                        <h3 class="display-4 fw-bold mb-2">135</h3>
-                        <p class="text-muted mb-0">Finished Projects</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
-                    <div class="stats-item">
-                        <h3 class="display-4 fw-bold mb-2">225</h3>
-                        <p class="text-muted mb-0">Working Hours</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
-                    <div class="stats-item">
-                        <h3 class="display-4 fw-bold mb-2">115</h3>
-                        <p class="text-muted mb-0">Online Support</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="stats-item">
-                        <h3 class="display-4 fw-bold mb-2">272</h3>
-                        <p class="text-muted mb-0">Happy Customers</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+            <div class="stats-item">
+              <h3 class="display-4 fw-bold mb-2">135</h3>
+              <p class="text-muted mb-0">Finished Projects</p>
             </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+            <div class="stats-item">
+              <h3 class="display-4 fw-bold mb-2">225</h3>
+              <p class="text-muted mb-0">Working Hours</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+            <div class="stats-item">
+              <h3 class="display-4 fw-bold mb-2">115</h3>
+              <p class="text-muted mb-0">Online Support</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="stats-item">
+              <h3 class="display-4 fw-bold mb-2">272</h3>
+              <p class="text-muted mb-0">Happy Customers</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Portfolio Section -->
     <section class="portfolio-section py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">My Success Work</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="portfolio-item">
-                        <img src="workspace1.jpg" alt="Workspace Setup" class="img-fluid rounded shadow-sm">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="portfolio-item">
-                        <img src="workspace2.jpg" alt="Modern Desktop" class="img-fluid rounded shadow-sm">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="portfolio-item">
-                        <img src="workspace3.jpg" alt="Minimal Setup" class="img-fluid rounded shadow-sm">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="portfolio-item">
-                        <img src="workspace4.jpg" alt="Office Space" class="img-fluid rounded shadow-sm">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="portfolio-item">
-                        <img src="workspace5.jpg" alt="Working Setup" class="img-fluid rounded shadow-sm">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="portfolio-item">
-                        <img src="workspace6.jpg" alt="Creative Space" class="img-fluid rounded shadow-sm">
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="text-center mb-5">My Success Work</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="portfolio-item">
+              <img
+                src="workspace1.jpg"
+                alt="Workspace Setup"
+                class="img-fluid rounded shadow-sm"
+              />
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio-item">
+              <img
+                src="workspace2.jpg"
+                alt="Modern Desktop"
+                class="img-fluid rounded shadow-sm"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio-item">
+              <img
+                src="workspace3.jpg"
+                alt="Minimal Setup"
+                class="img-fluid rounded shadow-sm"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio-item">
+              <img
+                src="workspace4.jpg"
+                alt="Office Space"
+                class="img-fluid rounded shadow-sm"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio-item">
+              <img
+                src="workspace5.jpg"
+                alt="Working Setup"
+                class="img-fluid rounded shadow-sm"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio-item">
+              <img
+                src="workspace6.jpg"
+                alt="Creative Space"
+                class="img-fluid rounded shadow-sm"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Partners Section -->
     <section class="partners-section py-5">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col partners-logo text-center">
-                    <img src="gluten-free.png" alt="100% Gluten Free" class="img-fluid">
-                </div>
-                <div class="col partners-logo text-center">
-                    <img src="massage.png" alt="Massage & Spa" class="img-fluid">
-                </div>
-                <div class="col partners-logo text-center">
-                    <img src="butchery.png" alt="Butchery" class="img-fluid">
-                </div>
-                <div class="col partners-logo text-center">
-                    <img src="natural.png" alt="Natural" class="img-fluid">
-                </div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col partners-logo text-center">
+            <img
+              src="gluten-free.png"
+              alt="100% Gluten Free"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col partners-logo text-center">
+            <img src="massage.png" alt="Massage & Spa" class="img-fluid" />
+          </div>
+          <div class="col partners-logo text-center">
+            <img src="butchery.png" alt="Butchery" class="img-fluid" />
+          </div>
+          <div class="col partners-logo text-center">
+            <img src="natural.png" alt="Natural" class="img-fluid" />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer Section -->
     <footer class="footer py-5 bg-dark text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <a href="#" class="navbar-brand text-white mb-4 d-block">
-                        <span class="bg-teal p-1 rounded me-1">◢</span> UI Portfolio
-                    </a>
-                    <div class="d-flex justify-content-center gap-4 mb-4 flex-wrap">
-                        <span><i class="fas fa-phone me-2"></i>+12 345 678 900</span>
-                        <span><i class="fas fa-envelope me-2"></i>info@example.com</span>
-                        <span><i class="fas fa-map-marker-alt me-2"></i>208 Avenue street, UK - 62617</span>
-                    </div>
-                    <div class="social-links mb-4">
-                        <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="text-white mx-2"><i class="fab fa-pinterest"></i></a>
-                    </div>
-                    <p class="text-muted mb-0">© 2024 UI Portfolio. All Rights Reserved</p>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <a href="#" class="navbar-brand text-white mb-4 d-block">
+              <span class="bg-teal p-1 rounded me-1">◢</span> UI Portfolio
+            </a>
+            <div class="d-flex justify-content-center gap-4 mb-4 flex-wrap">
+              <span><i class="fas fa-phone me-2"></i>+12 345 678 900</span>
+              <span><i class="fas fa-envelope me-2"></i>info@example.com</span>
+              <span
+                ><i class="fas fa-map-marker-alt me-2"></i>208 Avenue street, UK
+                - 62617</span
+              >
             </div>
+            <div class="social-links mb-4">
+              <a href="#" class="text-white mx-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white mx-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white mx-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white mx-2"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="text-white mx-2"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+            <p class="text-muted mb-0">
+              © 2024 UI Portfolio. All Rights Reserved
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Side Navigation -->
     <div class="side-nav">
-        <div class="side-nav-content">
-            <a href="#"><i class="fas fa-arrow-right"></i></a>
-            <a href="#"><i class="fas fa-arrow-left"></i></a>
-            <a href="#"><i class="fas fa-download"></i></a>
-            <a href="#"><i class="fas fa-shopping-bag"></i></a>
-        </div>
+      <div class="side-nav-content">
+        <a href="#"><i class="fas fa-arrow-right"></i></a>
+        <a href="#"><i class="fas fa-arrow-left"></i></a>
+        <a href="#"><i class="fas fa-download"></i></a>
+        <a href="#"><i class="fas fa-shopping-bag"></i></a>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
