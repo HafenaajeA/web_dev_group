@@ -37,6 +37,39 @@
   color: #14b8a6;
 }
 
+.text-light-gray {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+    opacity: 0.8;
+    position: relative;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #14b8a6;
+    left: 0;
+    bottom: -2px;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.nav-link.text-white {
+    opacity: 1;
+}
+
 /* Hero Section */
 .hero-section {
   background-color: #0d1d28;
@@ -422,6 +455,52 @@
   text-transform: capitalize;
 }
 
+/* Statistics Section with CSS Counter */
+.stats-section {
+  background-color: #f9fafb;
+}
+
+.counter {
+  animation: countUp 4s ease-out forwards;
+  counter-reset: count 0;
+}
+
+.counter::after {
+  content: counter(count);
+}
+
+@keyframes countUp {
+  from {
+    counter-increment: count 0;
+  }
+  to {
+    counter-increment: count var(--target);
+  }
+}
+
+.stats-item {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.stats-item:nth-child(1) { animation-delay: 0.2s; }
+.stats-item:nth-child(2) { animation-delay: 0.4s; }
+.stats-item:nth-child(3) { animation-delay: 0.6s; }
+.stats-item:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-target="1500"] { --target: 1500; }
+[data-target="2500"] { --target: 2500; }
+[data-target="1280"] { --target: 1280; }
+[data-target="3020"] { --target: 3020; }
+
 /* Features Grid Section */
 .features-grid {
   background-color: #ffffff;
@@ -488,7 +567,7 @@
   content: '';
   position: absolute;
   top: 0;
-  width: 200px;
+  width: 250px;
   height: 100%;
   background: #3b7b6a;
   z-index: 2;
@@ -668,4 +747,179 @@
 .btn-cv:hover {
   background-color: #059669;
   color: white;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #0d1d28;
+    color: #fff;
+}
+
+body.dark-mode .custom-nav {
+    background-color: rgba(13, 29, 40, 0.95);
+}
+
+body.dark-mode .service-card,
+body.dark-mode .feature-item,
+body.dark-mode .stats-section,
+body.dark-mode .features-grid {
+    background-color: rgba(13, 29, 40, 0.8);
+    color: #fff;
+}
+
+body.dark-mode .service-card h3,
+body.dark-mode .feature-item h3,
+body.dark-mode .stats-item h3,
+body.dark-mode .text-dark,
+body.dark-mode .wsl-title-main {
+    color: #fff;
+}
+
+body.dark-mode .service-card p,
+body.dark-mode .feature-item p,
+body.dark-mode .stats-item p,
+body.dark-mode .text-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    display: none;
+}
+
+.dark-mode-toggle:checked ~ .btn i {
+    transform: rotate(360deg);
+}
+
+.dark-mode-toggle:checked ~ .btn .fa-moon:before {
+    content: "\f185";  /* Changes moon icon to sun */
+}
+
+.dark-mode-toggle:checked ~ body {
+    background-color: #0d1d28;
+    color: #fff;
+}
+
+/* Dark Mode Styles */
+.dark-mode-toggle:checked ~ body .custom-nav {
+    background-color: rgba(13, 29, 40, 0.95);
+}
+
+.dark-mode-toggle:checked ~ body .service-card,
+.dark-mode-toggle:checked ~ body .feature-item,
+.dark-mode-toggle:checked ~ body .stats-section,
+.dark-mode-toggle:checked ~ body .features-grid {
+    background-color: rgba(13, 29, 40, 0.8);
+    color: #fff;
+}
+
+.dark-mode-toggle:checked ~ body .service-card h3,
+.dark-mode-toggle:checked ~ body .feature-item h3,
+.dark-mode-toggle:checked ~ body .stats-item h3,
+.dark-mode-toggle:checked ~ body .text-dark,
+.dark-mode-toggle:checked ~ body .wsl-title-main {
+    color: #fff;
+}
+
+.dark-mode-toggle:checked ~ body .service-card p,
+.dark-mode-toggle:checked ~ body .feature-item p,
+.dark-mode-toggle:checked ~ body .stats-item p,
+.dark-mode-toggle:checked ~ body .text-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Add transition for smooth theme switching */
+body, .custom-nav, .service-card, .feature-item, 
+.stats-section, .features-grid, h3, p {
+    transition: all 0.3s ease;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    display: none;
+}
+
+.dark-mode-toggle:checked ~ .page-container {
+    background-color: #0d1d28;
+    color: #fff;
+}
+
+.dark-mode-toggle:checked ~ .page-container .custom-nav {
+    background-color: rgba(13, 29, 40, 0.95);
+}
+
+.dark-mode-toggle:checked ~ .page-container .service-card,
+.dark-mode-toggle:checked ~ .page-container .feature-item,
+.dark-mode-toggle:checked ~ .page-container .stats-section,
+.dark-mode-toggle:checked ~ .page-container .features-grid,
+.dark-mode-toggle:checked ~ .page-container .wsl-about {
+    background-color: rgba(13, 29, 40, 0.8);
+    color: #fff;
+}
+
+.dark-mode-toggle:checked ~ .page-container .service-card h3,
+.dark-mode-toggle:checked ~ .page-container .feature-item h3,
+.dark-mode-toggle:checked ~ .page-container .stats-item h3,
+.dark-mode-toggle:checked ~ .page-container .text-dark,
+.dark-mode-toggle:checked ~ .page-container .wsl-title-main,
+.dark-mode-toggle:checked ~ .page-container .portfolio-section h2 {
+    color: #fff;
+}
+
+.dark-mode-toggle:checked ~ .page-container .service-card p,
+.dark-mode-toggle:checked ~ .page-container .feature-item p,
+.dark-mode-toggle:checked ~ .page-container .stats-item p,
+.dark-mode-toggle:checked ~ .page-container .text-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Add transition for smooth theme switching */
+.page-container,
+.page-container *:not(script) {
+    transition: all 0.3s ease;
+}
+
+.page-container {
+    min-height: 100vh;
+}
+
+.theme-switch {
+    position: relative;
+}
+
+.dark-mode-toggle {
+    display: none;
+}
+
+.dark-mode-toggle + label i {
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle:checked + label i:before {
+    content: "\f185"; /* Changes to sun icon */
+}
+
+.dark-mode-toggle:checked + label i {
+    transform: rotate(360deg);
+}
+
+/* Theme Toggle Styles */
+.theme-switch {
+    position: relative;
+}
+
+.dark-mode-toggle {
+    display: none;
+}
+
+.theme-toggle i {
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle:checked + label i {
+    transform: rotate(360deg);
+}
+
+.dark-mode-toggle:checked + label i.fa-moon:before {
+    content: "\f185"; /* Font Awesome sun icon */
 }
