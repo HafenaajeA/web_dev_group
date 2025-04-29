@@ -27,6 +27,9 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -81,10 +84,12 @@
       <!-- Contact Section -->
       <section class="contact-section py-5">
         <div class="container">
-          <h2 class="text-center mb-4 dark-mode-text">Get In Touch</h2>
-          <div class="row">
+          <h2 class="text-center mb-4">Get In Touch</h2>
+          <div class="row g-4">
+            <!-- Added g-4 for better gap on mobile -->
             <!-- Contact Form Column -->
-            <div class="col-lg-6 mb-4">
+            <div class="col-lg-6">
+              <!-- Removed mb-4 as g-4 handles spacing -->
               <div class="card shadow-lg dark-mode-card">
                 <div class="card-body p-4">
                   <form>
@@ -142,8 +147,10 @@
                 </div>
               </div>
             </div>
+
             <!-- Map Column -->
-            <div class="col-lg-6 mb-4">
+            <div class="col-lg-6">
+              <!-- Removed mb-4 as g-4 handles spacing -->
               <div class="card shadow-lg h-100 dark-mode-card">
                 <div class="card-body p-0">
                   <iframe
@@ -161,7 +168,8 @@
           </div>
 
           <!-- Contact Information Cards -->
-          <div class="row mt-4">
+          <div class="row g-4 mt-4">
+            <!-- Added g-4 for better gap on mobile -->
             <div class="col-md-4 text-center">
               <i class="fas fa-map-marker-alt text-teal fs-3 mb-3"></i>
               <h4>Location</h4>
