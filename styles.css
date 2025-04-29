@@ -482,12 +482,15 @@ body {
 }
 
 /* Icon colors */
-.bi-moon-fill,
-.bi-search {
+.navbar .fas.fa-search,
+.navbar .fas.fa-moon {
   color: white !important;
 }
 
-/* Footer Section */
+.custom-nav .btn i.fas {
+  color: white !important;
+}
+
 .footer {
   background-color: #0d1d28 !important;
 }
